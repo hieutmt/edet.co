@@ -10,10 +10,20 @@
       padding: 0;
       height: 100%;
       width: 100%;
+      cursor: pointer;
     }
+
     body {
       background: url('edit.jpg') center/cover no-repeat;
-      cursor: pointer;
+      background-color: #eae7e2;
+    }
+
+    /* Dành riêng cho mobile */
+    @media (max-width: 768px) {
+      body {
+        background: url('edit-mobile.jpg') center top / contain no-repeat;
+        background-color: #eae7e2;
+      }
     }
   </style>
 </head>
