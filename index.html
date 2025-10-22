@@ -5,52 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>'EDET | Coming Soon</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 100%;
+    }
+    body {
       background: url('edit.jpg') center/cover no-repeat;
-      background-color: #eae7e2;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      color: #111;
-      overflow: hidden;
-    }
-
-    .brand {
-      position: absolute;
-      left: 18%;
-      top: 48%;
-      transform: translateY(-50%);
-      font-size: clamp(60px, 8vw, 130px);
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      margin: 0;
-    }
-
-    .soon {
-      position: absolute;
-      right: 15%;
-      bottom: 48%;
-      transform: translateY(50%);
-      font-size: clamp(12px, 1.1vw, 18px);
-      color: #222;
-      letter-spacing: 2px;
       cursor: pointer;
-      transition: opacity 0.3s ease;
-    }
-
-    .soon:hover {
-      opacity: 0.6;
     }
   </style>
 </head>
-<body>
-  <h1 class="brand">'EDET</h1>
-  <div class="soon" onclick="window.open('https://districteight.com', '_blank')">COMING SOON</div>
+<body onclick="window.open('https://districteight.com', '_blank')">
 </body>
 </html>
