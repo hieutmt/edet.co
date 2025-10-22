@@ -3,50 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
+  <title>'EDET | Coming Soon</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      background: url('edit.jpg') center/cover no-repeat;
+      background-color: #eae7e2;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      height: 100vh;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
+      position: relative;
+      color: #111;
+      overflow: hidden;
     }
 
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 3px;
-      margin-bottom: 10px;
+    .brand {
+      position: absolute;
+      left: 18%;
+      top: 48%;
+      transform: translateY(-50%);
+      font-size: clamp(60px, 8vw, 130px);
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      margin: 0;
     }
 
-    p {
-      color: #aaa;
-      font-size: 1.2rem;
-      margin-bottom: 30px;
+    .soon {
+      position: absolute;
+      right: 15%;
+      bottom: 48%;
+      transform: translateY(50%);
+      font-size: clamp(12px, 1.1vw, 18px);
+      color: #222;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
     }
 
-    .loader {
-      border: 5px solid #333;
-      border-top: 5px solid #fff;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    .soon:hover {
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
-  <h1>COMING SOON</h1>
-  <p>if have any questions, please contact us via email: info@districteight.com</p>
-  <div class="loader"></div>
+  <h1 class="brand">'EDET</h1>
+  <div class="soon" onclick="window.open('https://districteight.com', '_blank')">COMING SOON</div>
 </body>
 </html>
